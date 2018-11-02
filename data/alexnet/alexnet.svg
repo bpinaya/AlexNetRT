@@ -1,0 +1,160 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg id="net-svg" width="72" height="1252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs xmlns="http://www.w3.org/1999/xhtml"><style type="text/css"><![CDATA[
+.qtip { position: absolute; left: -28000px; top: -28000px; display: none; max-width: 280px; min-width: 50px; font-size: 10.5px; line-height: 12px; direction: ltr; box-shadow: none; padding: 0px; }
+.qtip-content { position: relative; padding: 5px 9px; overflow: hidden; text-align: left; overflow-wrap: break-word; }
+.qtip-titlebar { position: relative; padding: 5px 35px 5px 10px; overflow: hidden; border-width: 0px 0px 1px; font-weight: bold; }
+.qtip-titlebar + .qtip-content { border-top-width: 0px !important; }
+.qtip-close { position: absolute; right: -9px; top: -9px; z-index: 11; cursor: pointer; outline: none medium; border: 1px solid transparent; }
+.qtip-titlebar .qtip-close { right: 4px; top: 50%; margin-top: -9px; }
+* html .qtip-titlebar .qtip-close { top: 16px; }
+.qtip-titlebar .ui-icon, .qtip-icon .ui-icon { display: block; text-indent: -1000em; direction: ltr; }
+.qtip-icon, .qtip-icon .ui-icon { border-radius: 3px; text-decoration: none; }
+.qtip-icon .ui-icon { width: 18px; height: 14px; text-align: center; text-indent: 0px; font: bold 10px/13px Tahoma, sans-serif; color: inherit; background: none -100em -100em no-repeat transparent; }
+.qtip-focus { }
+.qtip-hover { }
+.qtip-default { border: 1px solid rgb(49, 52, 63); border-radius: 5px; background-color: rgb(49, 52, 63); color: rgb(82, 99, 125); font-family: Roboto; font-size: 12px; line-height: 18px; }
+.qtip-default .qtip-icon { border-color: rgb(204, 204, 204); background: rgb(241, 241, 241); color: rgb(119, 119, 119); }
+.qtip-default .qtip-titlebar .qtip-close { border-color: rgb(170, 170, 170); color: rgb(17, 17, 17); }
+.qtip-shadow { box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 3px 1px; }
+.qtip-rounded .qtip-titlebar { border-radius: 4px 4px 0px 0px; }
+.qtip:not(.ie9haxors) div.qtip-content, .qtip:not(.ie9haxors) div.qtip-titlebar { filter: none; }
+.qtip .qtip-tip { margin: 0px auto; overflow: hidden; z-index: 10; }
+.qtip .qtip-tip, .qtip .qtip-tip .qtip-vml, .qtip .qtip-tip canvas { position: absolute; color: rgb(18, 52, 86); background: transparent; border: 0px dashed transparent; }
+.qtip .qtip-tip canvas { top: 0px; left: 0px; }
+.qtip .qtip-tip .qtip-vml { display: inline-block; visibility: visible; }
+#qtip-overlay { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; }
+#qtip-overlay.blurs { cursor: pointer; }
+#qtip-overlay div { position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-color: black; opacity: 0.7; }
+.qtipmodal-ie6fix { position: absolute !important; }
+.CodeMirror { font-family: monospace; height: 300px; color: black; }
+.CodeMirror-lines { padding: 4px 0px; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { background-color: white; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background-color: rgb(247, 247, 247); white-space: nowrap; }
+.CodeMirror-linenumbers { }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; min-width: 20px; text-align: right; color: rgb(153, 153, 153); white-space: nowrap; }
+.CodeMirror-guttermarker { color: black; }
+.CodeMirror-guttermarker-subtle { color: rgb(153, 153, 153); }
+.CodeMirror div.CodeMirror-cursor { border-left: 1px solid black; }
+.CodeMirror div.CodeMirror-secondarycursor { border-left: 1px solid silver; }
+.CodeMirror.cm-fat-cursor div.CodeMirror-cursor { width: auto; border: 0px; background: rgb(119, 238, 119); }
+.CodeMirror.cm-fat-cursor div.CodeMirror-cursors { z-index: 1; }
+.cm-animate-fat-cursor { width: auto; border: 0px; animation: blink 1.06s steps(1, end) 0s infinite normal none running; background-color: rgb(119, 238, 119); }
+div.CodeMirror-overwrite div.CodeMirror-cursor { }
+.cm-tab { display: inline-block; text-decoration: inherit; }
+.CodeMirror-ruler { border-left: 1px solid rgb(204, 204, 204); position: absolute; }
+.CodeMirror .CodeMirror-scroll { background-color: rgb(44, 44, 44); color: rgb(230, 225, 220); }
+.CodeMirror .CodeMirror-gutters { background-color: rgb(59, 59, 59); border-right: none; }
+.CodeMirror-focused .CodeMirror-activeline-background { background: rgb(35, 35, 35) !important; }
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background { box-shadow: rgb(0, 0, 0) 15px 0px 0px 0px inset; }
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt { background: rgb(35, 35, 35); color: rgb(255, 255, 255); }
+.CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt { color: rgb(120, 120, 120); }
+.CodeMirror.find-highlighting div.CodeMirror-selected, .CodeMirror .CodeMirror.find-highlighting div.CodeMirror-selected { background: red; }
+.CodeMirror-cursor { border-left: 1px solid rgb(197, 200, 198) !important; }
+.CodeMirror-overwrite .CodeMirror-cursor { border-bottom: 1px solid rgb(197, 200, 198); border-left: none !important; }
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt { color: rgb(255, 255, 255); }
+.CodeMirror .CodeMirror-selected { background: rgb(51, 51, 51); }
+.CodeMirror-focused .CodeMirror-selected { background: rgb(60, 60, 60); }
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag { background-color: rgb(0, 0, 0); color: rgb(139, 255, 4) !important; }
+.cm-atom { color: rgb(224, 226, 228); }
+.cm-qualifier { color: rgb(255, 198, 109); }
+.cm-def { color: rgb(209, 224, 221); }
+.cm-keyword { color: rgb(238, 120, 110); }
+.cm-comment { color: rgb(157, 155, 150); }
+.cm-string { color: rgb(202, 153, 194); }
+.cm-string-2 { color: rgb(165, 194, 97); }
+.cm-variable { color: rgb(208, 208, 255); }
+.cm-variable-2 { color: rgb(208, 208, 255); }
+.cm-variable-3 { color: rgb(208, 208, 255); }
+.cm-tag { color: rgb(232, 191, 106); }
+.cm-attribute { color: rgb(255, 198, 109); }
+.cm-property { color: rgb(110, 156, 190); }
+.cm-number { color: rgb(253, 205, 80); }
+.cm-meta { color: rgb(255, 198, 109); }
+.cm-operator { color: rgb(204, 120, 51); }
+.cm-builtin { color: rgb(204, 120, 51); }
+.cm-hr { color: rgb(165, 194, 97); }
+.cm-plus { color: rgb(255, 198, 109); }
+.cm-bracket { color: rgb(157, 155, 150); }
+.cm-error { color: rgb(188, 50, 47); }
+.cm-minus { color: rgb(188, 50, 47); }
+.cm-quote { color: rgb(202, 153, 194); }
+#image-holder, #not-editor { background-color: rgb(44, 44, 44); }
+#image-holder { color: rgb(230, 225, 220); }
+.CodeMirror-composing { border-bottom: 2px solid; }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.CodeMirror-matchingtag { background: rgba(255, 150, 0, 0.3); }
+.CodeMirror-activeline-background { background: rgb(232, 242, 255); }
+.CodeMirror { position: relative; overflow: hidden; background: white; }
+.CodeMirror-scroll { margin-bottom: -30px; margin-right: -30px; padding-bottom: 30px; height: 100%; outline: none; position: relative; overflow: scroll !important; }
+.CodeMirror-sizer { position: relative; border-right: 30px solid transparent; }
+.CodeMirror-vscrollbar, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-gutter-filler { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden scroll; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: scroll hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; display: inline-block; margin-bottom: -30px; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: none !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-gutter-wrapper { user-select: none; }
+.CodeMirror-lines { cursor: text; min-height: 1px; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: transparent; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; line-height: inherit; color: inherit; z-index: 2; position: relative; overflow: visible; -webkit-tap-highlight-color: transparent; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-widget { }
+.CodeMirror-code { outline: none; }
+.CodeMirror-scroll, .CodeMirror-sizer, .CodeMirror-gutter, .CodeMirror-gutters, .CodeMirror-linenumber { box-sizing: content-box; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; border-right: none; width: 0px; }
+div.CodeMirror-cursors { visibility: hidden; position: relative; z-index: 3; }
+.CodeMirror-focused div.CodeMirror-cursors { visibility: visible; }
+.CodeMirror-selected { background: rgb(217, 217, 217); }
+.CodeMirror-focused .CodeMirror-selected { background: rgb(215, 212, 240); }
+.CodeMirror-crosshair { cursor: crosshair; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+.CodeMirror span { }
+.cm-force-border { padding-right: 0.1px; }
+.cm-tab-wrap-hack::after { content: ""; }
+span.CodeMirror-selectedtext { background: none; }
+* { box-sizing: border-box; }
+html, body { font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serf; background-color: rgb(247, 235, 225); margin: 0px; padding: 0px; height: 100%; }
+h1, h2, h3 { color: rgb(85, 64, 55); font-weight: 300; }
+#master-container { overflow: hidden; height: 100%; width: 100%; }
+#net-column { width: 100%; }
+.column { float: left; width: 30%; height: 100%; overflow: scroll; }
+.CodeMirror { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; height: 100% !important; }
+#net-spinner { padding: 50px; text-align: center; }
+#net-container { display: none; text-align: center; }
+#net-group { display: inline-block; }
+#net-svg { }
+#net-title { padding: 20px; border-bottom: 1px solid rgb(85, 64, 55); min-width: 400px; text-align: center; }
+#net-warning, #net-error { color: rgb(255, 255, 255); padding: 20px; border: 1px solid transparent; border-radius: 5px; margin: 20px auto; width: 400px; font-size: 12px; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+#net-error { background-color: rgb(194, 55, 57); }
+#net-warning { background-color: rgb(242, 146, 51); }
+#net-warning .title, #net-error .title { border-bottom: 1px solid rgb(255, 171, 172); padding-bottom: 10px; margin-bottom: 10px; }
+#net-error .msg { }
+.node-label { font-size: 14px; color: rgb(86, 54, 33); padding: 1px; }
+.node-label:not(:first-child) { padding-top: 5px; margin-top: 5px; border-top: 1px solid rgba(255, 255, 255, 0.5); }
+.node { fill: rgb(255, 184, 77); }
+.node-type-convolution, .node-type-deconvolution { fill: rgb(202, 82, 55); }
+.node-type-convolution .node-label, .node-type-deconvolution .node-label { color: rgb(255, 255, 255); }
+.node-type-inner-product, .node-type-innerproduct { fill: rgb(189, 0, 38); }
+.node-type-inner-product .node-label, .node-type-innerproduct .node-label { color: rgb(255, 255, 255); }
+.node-type-source { fill: rgb(55, 160, 88); }
+.node-type-source .node-label { color: rgb(255, 255, 255); }
+.node-type-sink { fill: rgb(127, 106, 155); }
+.node-type-sink .node-label { color: rgb(255, 255, 255); }
+.edgePath path { stroke: rgb(85, 64, 55); fill: rgb(85, 64, 55); stroke-width: 1.5px; }
+.node-info-header { }
+.node-param-row { }
+.node-param-section { border-left: 1px solid rgb(82, 99, 125); padding-left: 10px; }
+.node-param-key { color: rgb(145, 165, 189); }
+.node-param-value { color: rgb(38, 191, 140); }
+.node-info-title { color: rgb(247, 191, 87); }
+.node-info-type { color: rgb(196, 153, 255); }
+.node-info-annotation { color: rgb(105, 191, 255); }
+.node-info-group:not(:first-child) { padding-top: 5px; margin-top: 10px; border-top: 1px dotted rgb(82, 99, 125); }]]></style></defs><g transform="translate(0)"><g class="output"><g class="clusters"/><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,38L30.84375,53L30.84375,68" marker-end="url(https://ethereon.github.io/netscope/#arrowhead72)" style="fill: none;"/><defs><marker id="arrowhead72" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,134L30.84375,149L30.84375,164" marker-end="url(https://ethereon.github.io/netscope/#arrowhead73)" style="fill: none;"/><defs><marker id="arrowhead73" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,202L30.84375,217L30.84375,232" marker-end="url(https://ethereon.github.io/netscope/#arrowhead74)" style="fill: none;"/><defs><marker id="arrowhead74" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,270L30.84375,285L30.84375,300" marker-end="url(https://ethereon.github.io/netscope/#arrowhead75)" style="fill: none;"/><defs><marker id="arrowhead75" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,366L30.84375,381L30.84375,396" marker-end="url(https://ethereon.github.io/netscope/#arrowhead76)" style="fill: none;"/><defs><marker id="arrowhead76" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,434L30.84375,449L30.84375,464" marker-end="url(https://ethereon.github.io/netscope/#arrowhead77)" style="fill: none;"/><defs><marker id="arrowhead77" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,502L30.84375,517L30.84375,532" marker-end="url(https://ethereon.github.io/netscope/#arrowhead78)" style="fill: none;"/><defs><marker id="arrowhead78" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,598L30.84375,613L30.84375,628" marker-end="url(https://ethereon.github.io/netscope/#arrowhead79)" style="fill: none;"/><defs><marker id="arrowhead79" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,694L30.84375,709L30.84375,724" marker-end="url(https://ethereon.github.io/netscope/#arrowhead80)" style="fill: none;"/><defs><marker id="arrowhead80" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,790L30.84375,805L30.84375,820" marker-end="url(https://ethereon.github.io/netscope/#arrowhead81)" style="fill: none;"/><defs><marker id="arrowhead81" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,858L30.84375,873L30.84375,888" marker-end="url(https://ethereon.github.io/netscope/#arrowhead82)" style="fill: none;"/><defs><marker id="arrowhead82" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,982L30.84375,997L30.84375,1012" marker-end="url(https://ethereon.github.io/netscope/#arrowhead83)" style="fill: none;"/><defs><marker id="arrowhead83" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,1106L30.84375,1121L30.84375,1136" marker-end="url(https://ethereon.github.io/netscope/#arrowhead84)" style="fill: none;"/><defs><marker id="arrowhead84" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M30.84375,1174L30.84375,1189L30.84375,1204" marker-end="url(https://ethereon.github.io/netscope/#arrowhead85)" style="fill: none;"/><defs><marker id="arrowhead85" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 L 4 5 z" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"/></text></g></g></g><g class="nodes"><g class="node node-type-source" transform="translate(30.84375,19)" style="opacity: 1;" data-hasqtip="0" aria-describedby="qtip-0"><rect rx="5" ry="5" x="-24.625" y="-19" width="49.25" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-14.625,-9)"><foreignObject width="29.25" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">data</div></div></foreignObject></g></g></g><g class="node node-type-convolution" transform="translate(30.84375,101)" style="opacity: 1;" data-hasqtip="1"><rect rx="5" ry="5" x="-29.6796875" y="-33" width="59.359375" height="66"/><g class="label" transform="translate(0,0)"><g transform="translate(-19.6796875,-23)"><foreignObject width="39.359375" height="46"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">conv1</div><div class="node-label">relu1</div></div></foreignObject></g></g></g><g class="node node-type-lrn" transform="translate(30.84375,183)" style="opacity: 1;" data-hasqtip="2"><rect rx="5" ry="5" x="-30.84375" y="-19" width="61.6875" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-20.84375,-9)"><foreignObject width="41.6875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">norm1</div></div></foreignObject></g></g></g><g class="node node-type-pooling" transform="translate(30.84375,251)" style="opacity: 1;" data-hasqtip="3"><rect rx="5" ry="5" x="-28.1328125" y="-19" width="56.265625" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-18.1328125,-9)"><foreignObject width="36.265625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">pool1</div></div></foreignObject></g></g></g><g class="node node-type-convolution" transform="translate(30.84375,333)" style="opacity: 1;" data-hasqtip="4"><rect rx="5" ry="5" x="-29.6796875" y="-33" width="59.359375" height="66"/><g class="label" transform="translate(0,0)"><g transform="translate(-19.6796875,-23)"><foreignObject width="39.359375" height="46"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">conv2</div><div class="node-label">relu2</div></div></foreignObject></g></g></g><g class="node node-type-lrn" transform="translate(30.84375,415)" style="opacity: 1;" data-hasqtip="5"><rect rx="5" ry="5" x="-30.84375" y="-19" width="61.6875" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-20.84375,-9)"><foreignObject width="41.6875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">norm2</div></div></foreignObject></g></g></g><g class="node node-type-pooling" transform="translate(30.84375,483)" style="opacity: 1;" data-hasqtip="6"><rect rx="5" ry="5" x="-28.1328125" y="-19" width="56.265625" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-18.1328125,-9)"><foreignObject width="36.265625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">pool2</div></div></foreignObject></g></g></g><g class="node node-type-convolution" transform="translate(30.84375,565)" style="opacity: 1;" data-hasqtip="7"><rect rx="5" ry="5" x="-29.6796875" y="-33" width="59.359375" height="66"/><g class="label" transform="translate(0,0)"><g transform="translate(-19.6796875,-23)"><foreignObject width="39.359375" height="46"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">conv3</div><div class="node-label">relu3</div></div></foreignObject></g></g></g><g class="node node-type-convolution" transform="translate(30.84375,661)" style="opacity: 1;" data-hasqtip="8"><rect rx="5" ry="5" x="-29.6796875" y="-33" width="59.359375" height="66"/><g class="label" transform="translate(0,0)"><g transform="translate(-19.6796875,-23)"><foreignObject width="39.359375" height="46"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">conv4</div><div class="node-label">relu4</div></div></foreignObject></g></g></g><g class="node node-type-convolution" transform="translate(30.84375,757)" style="opacity: 1;" data-hasqtip="9"><rect rx="5" ry="5" x="-29.6796875" y="-33" width="59.359375" height="66"/><g class="label" transform="translate(0,0)"><g transform="translate(-19.6796875,-23)"><foreignObject width="39.359375" height="46"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">conv5</div><div class="node-label">relu5</div></div></foreignObject></g></g></g><g class="node node-type-pooling" transform="translate(30.84375,839)" style="opacity: 1;" data-hasqtip="10"><rect rx="5" ry="5" x="-28.1328125" y="-19" width="56.265625" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-18.1328125,-9)"><foreignObject width="36.265625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">pool5</div></div></foreignObject></g></g></g><g class="node node-type-innerproduct" transform="translate(30.84375,935)" style="opacity: 1;" data-hasqtip="11"><rect rx="5" ry="5" x="-28.90625" y="-47" width="57.8125" height="94"/><g class="label" transform="translate(0,0)"><g transform="translate(-18.90625,-37)"><foreignObject width="37.8125" height="74"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">fc6</div><div class="node-label">relu6</div><div class="node-label">drop6</div></div></foreignObject></g></g></g><g class="node node-type-innerproduct" transform="translate(30.84375,1059)" style="opacity: 1;" data-hasqtip="12"><rect rx="5" ry="5" x="-28.90625" y="-47" width="57.8125" height="94"/><g class="label" transform="translate(0,0)"><g transform="translate(-18.90625,-37)"><foreignObject width="37.8125" height="74"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">fc7</div><div class="node-label">relu7</div><div class="node-label">drop7</div></div></foreignObject></g></g></g><g class="node node-type-innerproduct" transform="translate(30.84375,1155)" style="opacity: 1;" data-hasqtip="13"><rect rx="5" ry="5" x="-20.34375" y="-19" width="40.6875" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-10.34375,-9)"><foreignObject width="20.6875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">fc8</div></div></foreignObject></g></g></g><g class="node node-type-sink" transform="translate(30.84375,1223)" style="opacity: 1;" data-hasqtip="14"><rect rx="5" ry="5" x="-25.015625" y="-19" width="50.03125" height="38"/><g class="label" transform="translate(0,0)"><g transform="translate(-15.015625,-9)"><foreignObject width="30.03125" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><div class="node-label">prob</div></div></foreignObject></g></g></g></g></g></g></svg>
