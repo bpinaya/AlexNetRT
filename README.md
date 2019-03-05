@@ -17,7 +17,7 @@ In order to build this project make sure you have the following requirements:
 - CUDA > 8 (I used 9.0)
 - CMake > 3.8  (I used 3.12) - This make it easier to find the Cuda dependencies.
 - TensorRT >3 (I used 4.0)
-- The original `.caffemodel` that you can get from (here)[https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet] or just run:
+- The original `.caffemodel` that you can get from [here](https://github.com/BVLC/caffe/tree/master/models/bvlc_alexnet) or just run:
 
 ```
 wget -P data/alexnet/ http://dl.caffe.berkeleyvision.org/bvlc_alexnet.caffemodel
